@@ -1,22 +1,23 @@
 .login_body {
-    width: 100vw;
+    background: url("/Login.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image: url("../../../public/Login.png"); */
 }
 
 .login_container {
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: whitesmoke;
-    width: 650px;
-    height: 550px;
-   /*  border: 1px midnightblue solid; */
-   background-color: rgba(40, 62, 255, 0.25);
-   border-radius: 30px;
+    background-color: rgba(40, 62, 255, 0.5);
+    border-radius: 2rem;
 }
 
 .slogan_container {
@@ -26,43 +27,41 @@
     align-items: center;
 }
 
-.login_container > * {
-    margin-top: 3%;
-}
 
 .login_container form {
-    width: 70%;
-    padding: 30px;
-    margin-top: 8%;
     display: flex;
     flex-direction: column;
-    background-color: midnightblue;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 18px;
-    border: 3px solid slategrey;
-    border-style: ridge;
-    border-radius: 15px;
-}
-
-.login_container form > * {
-    margin-top: 5px;
-}
-
-.login_container form label {
-    margin-top: 15px;
+    margin: 5%;
 }
 
 .login_container form input {
     display: flex;
-    padding: 5px;
+    flex-direction: column;
     justify-content: center;
-    font-size: 14px;
+    text-align: left;
+    height: 3.5rem;
+    width: 26rem;
+    padding-left: 1rem;
+    margin: 4% 0;
+    border-radius: 5px;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
 }
 
-.submit {
-    margin-top: 30px;
-    max-width: 70px;
-    border: 0px;
-    cursor: pointer;
+.login_container button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #C4C4EB;
+    color: #393E46;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0.5rem 7rem;
+    margin: 4%;
 }

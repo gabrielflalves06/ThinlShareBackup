@@ -1,0 +1,102 @@
+.comu_body {
+    background-color: #222831;
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    height: 97vh;
+}
+
+.comu_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeira{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comu_nome {
+    padding: 2rem 25rem;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.post_texto {
+    padding: 5rem 33rem;
+    margin-bottom: 20px;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.post_container> ::placeholder {
+    color: #BEBEBE;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.comu_image {
+    padding: 2rem;
+    background: url("/nuvem.png");
+    background-repeat: no-repeat;
+    background-color: #FFF;
+    background-position: 90%;
+    background-size: 60px;
+    margin-right: 1rem;
+}
+
+.button_container {
+    margin-top: 50px;
+}
+
+
+.button_criar {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #11151B;
+    border: none;
+    border-radius: 30px;
+    margin-right: 10rem;
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.button_cancelar{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: #001C36;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}

@@ -9,29 +9,15 @@ export default function Login() {
                     <Image
                         src="/think&share.png"
                         alt="Think&Share slogan"
-                        width={180}
-                        height={105}/>
+                        width={200}
+                        height={146} />
                     {/* <span> lugar para compartilhar o que pensa e aprender com quem também</span> */}
                 </div>
                 <form action="">
-                    <label htmlFor="email">Email: </label>
-                    <input 
-                        type="email" 
-                        name="email" 
-                        id="email" 
-                        required
-                        placeholder="Digite seu email"
-                        maxLength={255}/>
-                    <label htmlFor="senha">Senha: </label>
-                    <input 
-                        type="password" 
-                        name="senha" 
-                        id="senha" 
-                        required
-                        placeholder="Digite sua senha"
-                        maxLength={64}/>
-                    <input type="submit" className={styles.submit} value="Login"/>
+                    <input type="email" name="email" id="email" placeholder="Email ou Telefone" />
+                    <input type="password" name="senha" id="senha" placeholder="senha" />
                 </form>
+                <button type="button">Login</button>
             </div>
         </div>
     );

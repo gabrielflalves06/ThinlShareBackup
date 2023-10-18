@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className={styles.app_container}>
       <Header></Header>
-      <div className={styles.main_container}>
+      <div className={styles.main_container}>,
         <Sidebar></Sidebar>
         <Main posts={posts}></Main>
       </div>
