@@ -7,7 +7,7 @@ export default function Post() {
                 <div className={styles.post_profile}>
                     <div className={styles.image_container}>
                         <span className={styles.image_background}>
-
+                            
                         </span>
                         <span className={styles.follow_container}>
 
