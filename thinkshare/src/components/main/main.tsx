@@ -1,3 +1,5 @@
+import Perfil from "../perfil/perfil"
+import Post1 from "../post1/post1"
 import styles from "./main.module.css"
 
 interface FetchPost {
@@ -24,10 +26,12 @@ interface FetchPost {
     },
 }
 
-export default function Main({ posts }: { posts: FetchPost[]}) {
+export default function Main({ posts }: { posts: FetchPost[] }) {
     return (
         <main className={styles.main_container}>
-            <div></div>
+            <Perfil></Perfil>
+            <Post1></Post1>
+            <Post1></Post1>
         </main>
     )
 }

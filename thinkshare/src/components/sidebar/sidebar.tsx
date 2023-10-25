@@ -1,5 +1,6 @@
 import styles from "./sidebar.module.css"
 import Image from "next/image"
+
 export default function Sidebar() {
     return (
         <aside className={styles.sidebar}>
