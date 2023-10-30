@@ -1,5 +1,6 @@
 import styles from "./page.module.css"
-import Image from "next/image"
+import Image from "../../../node_modules/next/image"
+import Link from "../../../node_modules/next/link";
 
 export default function Login() {
     return (
@@ -17,7 +18,8 @@ export default function Login() {
                     <input type="email" name="email" id="email" placeholder="Email ou Telefone" />
                     <input type="password" name="senha" id="senha" placeholder="senha" />
                 </form>
-                <button type="button">Login</button>
+                <Link className={styles.login_buttom}  href={"/"}>Login</Link>
+                <Link className={styles.login_cad} href={"/cadastro"}>Crie uma conta</Link>
             </div>
         </div>
     );

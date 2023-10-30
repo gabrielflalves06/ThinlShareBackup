@@ -1,5 +1,6 @@
 import styles from "./page.module.css"
-import Image from "next/image"
+import Image from "../../../node_modules/next/image"
+import Link from "../../../node_modules/next/link"
 
 export default function Cadastro() {
     return (
@@ -19,7 +20,8 @@ export default function Cadastro() {
                     <input type="password" name="senha" id="senha" placeholder="Confirmar senha" />
 
                 </form>
-                <button type="button">Cadastrar</button>
+                <Link className={styles.cad_buttom}  href={"/"}>Cadastro</Link>
+                <Link className={styles.cad_login} href={"/login"}>Já possui uma conta??</Link>
             </div>
         </div>
     )

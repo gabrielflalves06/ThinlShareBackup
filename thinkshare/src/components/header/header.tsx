@@ -1,5 +1,5 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "../../../node_modules/next/image"
+import Link from "../../../node_modules/next/link"
 import styles from "./header.module.css"
 
 export default function Head() {
@@ -8,7 +8,7 @@ export default function Head() {
         <div className={styles.header_container}>
             <nav>
                 <div className={styles.slogan}>
-                    <Link href="/"/>
+                    <Link href="/" />
                     <Image
                         src="/think&share.png"
                         alt="Think&Share slogan"
@@ -29,25 +29,27 @@ export default function Head() {
                 </div>
                 <div className={styles.icons_container}>
                     <div>
-                        <Link href=""/>
-                        <Image
-                            src="/home-menu-community-svgrepo-com.svg"
-                            alt="community icon"
-                            width={70}
-                            height={70}
-                        />
+                        <Link href={""}>
+                            <Image
+                                src="/home-menu-community-svgrepo-com.svg"
+                                alt="community icon"
+                                width={70}
+                                height={70}
+                            />
+                        </Link>
                     </div>
                     <div>
-                        <Link href=""/>
-                        <Image
-                            src="/profile-circle-svgrepo-com.svg"
-                            alt="profile icon"
-                            width={70}
-                            height={70}
-                        />
+                        <Link href={"/login"}>
+                            <Image
+                                src="/profile-circle-svgrepo-com.svg"
+                                alt="profile icon"
+                                width={70}
+                                height={70}
+                            />
+                        </Link>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </nav >
+        </div >
     )
 }
